@@ -1,0 +1,99 @@
+
+.formContainer {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+  font-size: 1.8em;
+  color: #0070f3;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.inputField,
+.textareaField {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.textareaField {
+  min-height: 100px; 
+  resize: vertical; 
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.submitButton,
+.cancelButton {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.submitButton {
+  background-color: #28a745; 
+  color: white;
+}
+.submitButton:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.cancelButton {
+  background-color: #6c757d; 
+  color: white;
+}
+.cancelButton:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+.nestedFormContainer {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px dashed #a0d911; 
+  border-radius: 8px;
+  background-color: #f6ffed; 
+}
+
+.nestedFormContainer .formTitle {
+  font-size: 1.4em;
+  color: #52c41a;
+  margin-bottom: 15px;
+}
+
+.nestedFormContainer .submitButton {
+  background-color: #52c41a;
+}
+.nestedFormContainer .submitButton:hover {
+  background-color: #389e08;
+}

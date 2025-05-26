@@ -1,0 +1,241 @@
+/* src/styles/ObjectiveDetails.module.css */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.objectiveTitle {
+  font-size: 2.5em;
+  color: #0070f3;
+  margin-bottom: 10px;
+}
+
+.objectiveDescription {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.objectivePercentage {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+  margin: 40px 0;
+}
+
+.sectionTitle {
+  font-size: 2em;
+  color: #0070f3;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.keyResultsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.krCard {
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.krDescription {
+  font-size: 1.5em;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.krMeta {
+  font-size: 0.95em;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.krPercentage {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.initiativesTitle {
+  font-size: 1.3em;
+  color: #0070f3;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #add8e6;
+  padding-bottom: 5px;
+}
+
+.initiativeList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.initiativeItem {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.initiativeTitle {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.initiativeDescription {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.initiativePercentage {
+  font-size: 1em;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.actions, .krActions, .initiativeActions {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.editButton, .deleteButton, .createButton, .backButton, .reloadButton {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.editButton {
+  background-color: #ffc107;
+  color: #333;
+}
+.editButton:hover {
+  background-color: #e0a800;
+}
+
+.deleteButton {
+  background-color: #dc3545; 
+  color: white;
+}
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.createButton {
+  background-color: #007bff; 
+  color: white;
+  margin-bottom: 20px;
+  align-self: flex-start; 
+}
+.createButton:hover {
+  background-color: #0069d9;
+}
+
+.backButton, .reloadButton {
+  background-color: #6c757d; 
+  color: white;
+}
+.backButton:hover, .reloadButton:hover {
+  background-color: #545b62;
+}
+
+.errorMessage {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.percentageSlider {
+  width: 150px; 
+  height: 8px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.percentageSlider:hover {
+  opacity: 1;
+}
+
+.percentageSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0070f3; 
+  cursor: pointer;
+}
+
+.percentageSlider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0070f3;
+  cursor: pointer;
+}
+
+.sliderValue {
+  font-weight: bold;
+  color: #0070f3;
+  min-width: 50px; 
+  text-align: right;
+}
+
+.initiativeActions {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.noItemsMessage {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 20px;
+}
